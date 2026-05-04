@@ -1,0 +1,46 @@
+html {
+  scroll-padding-top: 4.5rem;
+}
+
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-color: var(--bs-black);
+/*   background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+}
+
+.project-section {
+  background-color: var(--bs-black);
+  color: white;
+  min-height: 1000px;
+}
+
+.about-section {
+  min-height: 1000px;
+}
+
+.navbar {
+  background-color: var(--bs-black);
+}
+
+.navbar-text,
+.navbar-brand,
+.nav_link {
+  color: white;
+}
+
+.item-img {
+  height: 200px;
+  overflow: clip;
+  background-color: lightcoral;
+}
+
+.box {
+  background-color: lightblue;
+  border: 1px solid black;
+  min-height: 100px;
+  font-size: 2rem;
+}
