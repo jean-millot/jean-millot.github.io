@@ -29,8 +29,11 @@ body {
 }
 
 .about-section {
-  min-height: 1000px;
   background-color: white;
+}
+
+.about-img {
+  max-height: 50vh;
 }
 
 .navbar {
