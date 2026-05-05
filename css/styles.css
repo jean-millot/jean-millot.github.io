@@ -72,6 +72,12 @@ body {
   scale: 0.9;
 }
 
+.listen-section {
+  height: 1000px;
+  background-color: white;
+  color: var(--bs-black);
+}
+
 .box {
   background-color: lightblue;
   border: 1px solid black;
