@@ -78,9 +78,21 @@ body {
   color: var(--bs-black);
 }
 
+.player {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+}
+
+.media-text {
+  color: white;
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  background-color: var(--bs-black);
+}
+
 .box {
   background-color: lightblue;
   border: 1px solid black;
-  min-height: 100px;
+  min-height: 200px;
   font-size: 2rem;
 }
