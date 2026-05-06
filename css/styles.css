@@ -73,26 +73,25 @@ body {
 }
 
 .listen-section {
-  height: 1000px;
   background-color: white;
   color: var(--bs-black);
 }
 
-.player {
+.player-box {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
 
 .media-text {
   color: white;
-  aspect-ratio: 16 / 9;
   width: 100%;
+  height: 100%;
   background-color: var(--bs-black);
 }
 
 .box {
-  background-color: lightblue;
+  background-color: transparent;
   border: 1px solid black;
-  min-height: 200px;
-  font-size: 2rem;
+  aspect-ratio: 16 / 9;
+  width: 100%;
 }
