@@ -95,3 +95,7 @@ body {
   aspect-ratio: 16 / 9;
   width: 100%;
 }
+
+.modal-content {
+  background-color: black;
+}
