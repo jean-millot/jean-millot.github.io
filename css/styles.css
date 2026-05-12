@@ -60,7 +60,7 @@ body {
   background-color: lightcoral;
 }
 
-.img-box {
+.proj-card {
   width: 100%;
   aspect-ratio: 1.5;
   cursor: pointer; 
@@ -68,7 +68,22 @@ body {
   transition: all 0.5s; 
 }
 
-.img-box:hover {
+.proj-card .img-box::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, transparent, black);
+  transition: all 0.5s;
+}
+
+.proj-card:hover .img-box::after{
+  height: 50%;
+}
+
+.proj-card:hover {
   scale: 0.9;
 }
 
