@@ -143,11 +143,25 @@ body {
 
 .linkedin-icon{
   aspect-ratio: 635 / 540;
-  height: 8vh;
+  transition: all 0.5s;
+}
+
+.linkedin-icon:hover{
+  scale: 0.9;
 }
 
 .soundcloud-icon{
   background-color: #FF5500;
   aspect-ratio: 1/1;
-  height: 8vh;
+  transition: all 0.5s;
+}
+
+.soundcloud-icon:hover{
+  scale: 0.9;
+}
+
+.icon-container{
+  display: grid;
+  grid-template-columns: 1.17fr 1fr;
+  gap: 10px;
 }
