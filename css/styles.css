@@ -121,8 +121,7 @@ body {
 
 .email-link{
   background-color: white;
-  width: 400px;
-  height: 400px;
+  aspect-ratio: 1 / 1;
   transition: all 0.5s;
 }
 
@@ -136,4 +135,19 @@ body {
   top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.footer-section{
+  background: white;
+}
+
+.linkedin-icon{
+  aspect-ratio: 635 / 540;
+  height: 8vh;
+}
+
+.soundcloud-icon{
+  background-color: #FF5500;
+  aspect-ratio: 1/1;
+  height: 8vh;
 }
