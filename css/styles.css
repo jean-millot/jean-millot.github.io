@@ -114,3 +114,26 @@ body {
 .modal-content {
   background-color: black;
 }
+
+.contact-section{
+  color: white;
+}
+
+.email-link{
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  transition: all 0.5s;
+}
+
+.email-link:hover{
+  scale: 0.9;
+}
+
+.icon-div{
+  width: 80%;
+  height: 80%;
+  top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
