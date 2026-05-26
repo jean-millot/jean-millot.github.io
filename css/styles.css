@@ -3,10 +3,10 @@ html {
 }
 
 body {
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
-.bg-img{
+.bg-img {
   height: 100vh;
   width: 100vw;
   object-fit: cover;
@@ -19,11 +19,9 @@ body {
 .masthead {
   height: 100vh;
   min-height: 500px;
-  /* background-color: var(--bs-black); */
 }
 
 .project-section {
-  /* background-color: var(--bs-black); */
   color: white;
   min-height: 1000px;
 }
@@ -44,15 +42,31 @@ body {
   background-color: var(--bs-black);
 }
 
-/* .navbar {
-  background-color: var(--bs-black);
-} */
-
-.navbar-text,
-.navbar-brand,
-.nav_link {
-  color: white;
+.nav-link {
+  position: relative;
 }
+
+.nav-link::after {
+  content: '';
+  opacity: 0;
+  transition: all 0.5s;
+  height: 2px;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-link:hover::after {
+  opacity: 1;
+}
+
+/* .navbar-text,
+.navbar-brand,
+.nav-link {
+  color: white;
+} */
 
 .item-img {
   height: 200px;
@@ -63,23 +77,23 @@ body {
 .proj-card {
   width: 100%;
   aspect-ratio: 1.5;
-  cursor: pointer; 
+  cursor: pointer;
   background-color: lightblue;
-  transition: all 0.5s; 
+  transition: all 0.5s;
 }
 
-.proj-card .img-box::after{
-  content:"";
-  position:absolute;
-  top:0;
-  left:0;
+.proj-card .img-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background: linear-gradient(0deg, transparent, black);
   transition: all 0.5s;
 }
 
-.proj-card:hover .img-box::after{
+.proj-card:hover .img-box::after {
   height: 50%;
 }
 
@@ -115,52 +129,52 @@ body {
   background-color: black;
 }
 
-.contact-section{
+.contact-section {
   color: white;
 }
 
-.email-link{
+.email-link {
   background-color: white;
   aspect-ratio: 1 / 1;
   transition: all 0.5s;
 }
 
-.email-link:hover{
+.email-link:hover {
   scale: 0.9;
 }
 
-.icon-div{
+.icon-div {
   width: 80%;
   height: 80%;
   top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.footer-section{
+.footer-section {
   background: white;
 }
 
-.linkedin-icon{
+.linkedin-icon {
   aspect-ratio: 635 / 540;
   transition: all 0.5s;
 }
 
-.linkedin-icon:hover{
+.linkedin-icon:hover {
   scale: 0.9;
 }
 
-.soundcloud-icon{
+.soundcloud-icon {
   background-color: #FF5500;
   aspect-ratio: 1/1;
   transition: all 0.5s;
 }
 
-.soundcloud-icon:hover{
+.soundcloud-icon:hover {
   scale: 0.9;
 }
 
-.icon-container{
+.icon-container {
   display: grid;
   grid-template-columns: 1.17fr 1fr;
   gap: 10px;
