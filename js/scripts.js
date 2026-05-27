@@ -1,3 +1,15 @@
+function loadProject(projectFile, targetEl) {
+
+    fetch(projectFile).then(res => {
+        if (res.ok) {
+            return res.text();
+        }
+    })
+    .then(htmlResult => {
+        targetEl.innerHTML = htmlResult;
+    });
+}
+
 window.addEventListener('DOMContentLoaded', event => {
     const navEl = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
@@ -30,4 +42,7 @@ window.addEventListener('DOMContentLoaded', event => {
             rootMargin: '0px 0px -40%',
         });
     };
+
+    // Load project content
+    loadProject("./html/specimen.html", document.querySelector('#projSpecimen'));
 });
