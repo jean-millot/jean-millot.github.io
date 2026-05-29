@@ -10,6 +10,19 @@ function loadProject(projectFile, targetEl) {
     });
 }
 
+function pauseModalVideo(modal, frame){
+
+    var frameSrc = frame.getAttribute("src");
+
+    modal.addEventListener('show.bs.modal', (event) => {
+        frame.setAttribute("src", frameSrc);
+    });
+
+    modal.addEventListener('hide.bs.modal', (event) => {
+        frame.setAttribute("src", "");
+    });
+}
+
 window.addEventListener('DOMContentLoaded', event => {
     const navEl = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
@@ -43,6 +56,6 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     };
 
-    // Load project content
-    loadProject("./html/specimen.html", document.querySelector('#projSpecimen'));
+    // Pause video when closing modals
+    pauseModalVideo(document.getElementById("songsAndVoicesModal"), document.getElementById('songAndVoicesVideo'));
 });
