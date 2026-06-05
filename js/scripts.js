@@ -58,4 +58,5 @@ window.addEventListener('DOMContentLoaded', event => {
 
     // Pause video when closing modals
     pauseModalVideo(document.getElementById("songsAndVoicesModal"), document.getElementById('songAndVoicesVideo'));
+    pauseModalVideo(document.getElementById("WeightlessModal"), document.getElementById('WeightlessFrame'));
 });
