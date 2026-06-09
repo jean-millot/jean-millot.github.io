@@ -67,11 +67,10 @@ h6 {
   opacity: 1;
 }
 
-/* .navbar-text,
-.navbar-brand,
-.nav-link {
-  color: white;
-} */
+.navbar a
+{
+  font-size: 1.2rem;
+}
 
 .item-img {
   height: 200px;
