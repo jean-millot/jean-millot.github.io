@@ -101,10 +101,6 @@ h6 {
   height: 30%;
 }
 
-.proj-card:hover {
-  scale: 0.9;
-}
-
 .listen-section {
   background-color: white;
   color: var(--bs-black);
@@ -164,22 +160,28 @@ h6 {
   transition: all 0.5s;
 }
 
-.linkedin-icon:hover {
-  scale: 0.9;
-}
-
 .soundcloud-icon {
   background-color: #FF5500;
   aspect-ratio: 1/1;
   transition: all 0.5s;
 }
 
-.soundcloud-icon:hover {
-  scale: 0.9;
-}
-
 .icon-container {
   display: grid;
   grid-template-columns: 1.17fr 1fr;
   gap: 10px;
+}
+
+@media (hover: hover) {
+  .proj-card:hover {
+    scale: 0.9;
+  }
+
+  .soundcloud-icon:hover {
+    scale: 0.9;
+  }
+
+  .linkedin-icon:hover {
+    scale: 0.9;
+  }
 }
