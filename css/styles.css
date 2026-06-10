@@ -82,23 +82,18 @@ h6 {
   width: 100%;
   aspect-ratio: 1.5;
   cursor: pointer;
-  background-color: lightblue;
   transition: all 0.5s;
 }
 
-.proj-card .img-box::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.proj-card .proj-header {
+  height: 20%;
   width: 100%;
-  height: 60%;
-  background: linear-gradient(0deg, transparent, black);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.5s;
 }
 
-.proj-card:hover .img-box::after {
-  height: 30%;
+.proj-card:hover .proj-header {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .listen-section {
