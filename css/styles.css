@@ -26,13 +26,8 @@ h6 {
   min-height: 500px;
 }
 
-.project-section {
-  color: white;
-  min-height: 1000px;
-}
-
-.about-section {
-  background-color: white;
+.img-studio {
+  width: 40%;
 }
 
 .about-img {
@@ -124,12 +119,12 @@ h6 {
   background-color: black;
 }
 
-.contact-section {
+.dark-section {
   color: white;
 }
 
 .email-link {
-  background-color: white;
+  background-color: black;
   aspect-ratio: 1 / 1;
   transition: all 0.5s;
 }
@@ -146,7 +141,7 @@ h6 {
   transform: translate(-50%, -50%);
 }
 
-.footer-section {
+.white-section {
   background: white;
 }
 
