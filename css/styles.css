@@ -4,10 +4,26 @@ html {
 
 body {
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif !important;
+}
+
+.masthead h1 {
+  font-size: 3.5rem;
+}
+
+.masthead h3 {
+  font-size: 2rem;
 }
 
 h6 {
   font-weight: bold;
+}
+
+/* under small breakpoint */
+@media (max-width: 576px) {
+  .container {
+    padding: 25px;
+  }
 }
 
 .bg-img {
@@ -25,17 +41,12 @@ h6 {
   min-height: 500px;
 }
 
-.project-section {
-  color: white;
-  min-height: 1000px;
+p {
+  text-align: justify;
 }
 
-.about-section {
-  background-color: white;
-}
-
-.about-img {
-  max-height: 50vh;
+.img-studio {
+  width: 40%;
 }
 
 .navbar {
@@ -66,11 +77,21 @@ h6 {
   opacity: 1;
 }
 
-/* .navbar-text,
-.navbar-brand,
-.nav-link {
-  color: white;
-} */
+.navbar a {
+  font-size: 1.2rem;
+}
+
+.protrait-img-box {
+  aspect-ratio: 900 / 1200;
+  width: 75%;
+}
+
+/* lg breakpoint */
+@media (min-width: 992px) {
+  .protrait-img-box {
+    width: 100%;
+  }
+}
 
 .item-img {
   height: 200px;
@@ -82,27 +103,18 @@ h6 {
   width: 100%;
   aspect-ratio: 1.5;
   cursor: pointer;
-  background-color: lightblue;
   transition: all 0.5s;
 }
 
-.proj-card .img-box::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
+.proj-card .proj-header {
+  height: 20%;
   width: 100%;
-  height: 60%;
-  background: linear-gradient(0deg, transparent, black);
+  background-color: rgba(0, 0, 0, 0.7);
   transition: all 0.5s;
 }
 
-.proj-card:hover .img-box::after {
-  height: 30%;
-}
-
-.proj-card:hover {
-  scale: 0.9;
+.proj-card:hover .proj-header {
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .listen-section {
@@ -113,6 +125,14 @@ h6 {
 .player-box {
   aspect-ratio: 16 / 9;
   width: 100%;
+}
+
+/* under large breakpoint */
+@media (min-width: 992px) {
+  .text-box {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
 }
 
 .media-text {
@@ -133,18 +153,26 @@ h6 {
   background-color: black;
 }
 
-.contact-section {
+.dark-section {
   color: white;
 }
 
 .email-link {
-  background-color: white;
+  background-color: black;
   aspect-ratio: 1 / 1;
-  transition: all 0.5s;
+  transition: scale 0.5s;
+  width: 50%;
 }
 
 .email-link:hover {
   scale: 0.9;
+}
+
+/* under large breakpoint */
+@media (min-width: 992px) {
+  .email-link {
+    width: 30%;
+  }
 }
 
 .icon-div {
@@ -155,7 +183,7 @@ h6 {
   transform: translate(-50%, -50%);
 }
 
-.footer-section {
+.white-section {
   background: white;
 }
 
@@ -164,22 +192,28 @@ h6 {
   transition: all 0.5s;
 }
 
-.linkedin-icon:hover {
-  scale: 0.9;
-}
-
 .soundcloud-icon {
   background-color: #FF5500;
   aspect-ratio: 1/1;
   transition: all 0.5s;
 }
 
-.soundcloud-icon:hover {
-  scale: 0.9;
-}
-
 .icon-container {
   display: grid;
   grid-template-columns: 1.17fr 1fr;
   gap: 10px;
+}
+
+@media (hover: hover) {
+  .proj-card:hover {
+    scale: 0.9;
+  }
+
+  .soundcloud-icon:hover {
+    scale: 0.9;
+  }
+
+  .linkedin-icon:hover {
+    scale: 0.9;
+  }
 }
