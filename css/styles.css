@@ -7,8 +7,23 @@ body {
   font-family: 'Lato', sans-serif !important;
 }
 
+.masthead h1 {
+  font-size: 3.5rem;
+}
+
+.masthead h3 {
+  font-size: 2rem;
+}
+
 h6 {
   font-weight: bold;
+}
+
+/* under small breakpoint */
+@media (max-width: 576px) {
+  .container {
+    padding: 25px;
+  }
 }
 
 .bg-img {
@@ -62,14 +77,13 @@ p {
   opacity: 1;
 }
 
-.navbar a
-{
+.navbar a {
   font-size: 1.2rem;
 }
 
 .protrait-img-box {
-    aspect-ratio: 900 / 1200;
-    width: 75%;
+  aspect-ratio: 900 / 1200;
+  width: 75%;
 }
 
 /* lg breakpoint */
@@ -113,6 +127,14 @@ p {
   width: 100%;
 }
 
+/* under large breakpoint */
+@media (min-width: 992px) {
+  .text-box {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+}
+
 .media-text {
   color: white;
   width: 100%;
@@ -138,11 +160,19 @@ p {
 .email-link {
   background-color: black;
   aspect-ratio: 1 / 1;
-  transition: all 0.5s;
+  transition: scale 0.5s;
+  width: 50%;
 }
 
 .email-link:hover {
   scale: 0.9;
+}
+
+/* under large breakpoint */
+@media (min-width: 992px) {
+  .email-link {
+    width: 30%;
+  }
 }
 
 .icon-div {
