@@ -26,6 +26,10 @@ h6 {
   min-height: 500px;
 }
 
+p {
+  text-align: justify;
+}
+
 .img-studio {
   width: 40%;
 }
@@ -64,8 +68,15 @@ h6 {
 }
 
 .protrait-img-box {
-  aspect-ratio: 900 / 1200;
-  width: 100%;
+    aspect-ratio: 900 / 1200;
+    width: 75%;
+}
+
+/* lg breakpoint */
+@media (min-width: 992px) {
+  .protrait-img-box {
+    width: 100%;
+  }
 }
 
 .item-img {
